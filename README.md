@@ -1,11 +1,9 @@
 # Taller-de-programaci-n-
 Crear la clase cliente
-# Clase Cliente
 
 class Cliente:
-    '''
+    
     Clase que crea objetos de tipo cliente
-    '''
 
     def __init__(self, nombre, apellido, genero, ocupacion):
         self.__nombre = nombre
@@ -13,9 +11,6 @@ class Cliente:
         self.__genero = genero
         self.__ocupacion = ocupacion
 
-    # --------- PROPERTIES ---------
-
-    # nombre
     @property
     def nombre(self):
         return self.__nombre
@@ -24,7 +19,6 @@ class Cliente:
     def nombre(self, nuevo_nombre):
         self.__nombre = nuevo_nombre
 
-    # apellido
     @property
     def apellido(self):
         return self.__apellido
@@ -33,7 +27,6 @@ class Cliente:
     def apellido(self, nuevo_apellido):
         self.__apellido = nuevo_apellido
 
-    # genero
     @property
     def genero(self):
         return self.__genero
@@ -42,7 +35,6 @@ class Cliente:
     def genero(self, nuevo_genero):
         self.__genero = nuevo_genero
 
-    # ocupacion
     @property
     def ocupacion(self):
         return self.__ocupacion
@@ -54,8 +46,6 @@ class Cliente:
     def __str__(self):
         return f"Cliente [{self.__dict__}]"
 
-
-# Programa principal
 if __name__ == "__main__":
     cliente1 = Cliente("Maria", "Paz", "F", "Estudiante")
 
